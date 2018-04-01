@@ -1,0 +1,75 @@
+.change-transact-tool {
+    background-color: #e6e6e6;
+    line-height: 40px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, .3) !important;
+    text-align: center;
+}
+
+.change-transact-tool div {
+    cursor: pointer;
+}
+
+.change-transact-tool div:hover {
+    background-color: #5FB878;
+}
+
+.change-transact-table {
+    padding: 10px 50px;
+    position: absolute;
+    top: 40px;
+    bottom: 0px;
+    width: 100%;
+    overflow: auto;
+    /*background-color: red;*/
+}
+
+.change-transact-table table {
+    overflow: auto;
+    min-width: 700px;
+    background-color: #e6e6e6;
+    line-height: 40px;
+    font-size: 12px;
+}
+
+.change-transact-table table tr th {
+    font-size: 16px;
+}
+
+.change-transact-table table tr td, .change-transact-table table tr th {
+    width: 42px;
+    text-align: center;
+    border: solid 1px silver;
+}
+
+.change-transact-table table .enable {
+    background-color: white;
+}
+
+.change-transact-table table tr input {
+    width: 100%;
+    border-width: 0px;
+}
+
+.layui-tree-skin-staff .layui-tree-branch {
+    /*display: none;*/
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+.layui-tree-skin-staff li .layui-tree-branch:before{
+    /*bank*/
+    content: "\f19c";
+}
+.layui-tree-skin-staff li ul li .layui-tree-branch:before{
+    /*users*/
+    content: "\f0c0";
+}
+.layui-tree-skin-staff li ul li ul li .layui-tree-branch:before{
+    /*users*/
+    content: "\f007";
+}

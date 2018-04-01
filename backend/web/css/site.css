@@ -1,0 +1,192 @@
+html,
+body {
+    height: 100%;
+    /*min-width: 1100px;*/
+    /*overflow: auto;*/
+}
+
+.layui-layout-admin .layui-body {
+    background-color: #e6e6e6;
+    /*right: 0;*/
+}
+
+.mobile-nav {
+    display: none !important;
+    min-width: 130px;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc-nav {
+        display: none !important;
+    }
+
+    .layui-layout-left {
+        left: 0 !important;
+    }
+
+    .mobile-nav {
+        display: inline-block !important;
+    }
+}
+
+.side-active .side-fold,
+.side-active .layui-layout-admin .layui-side,
+.side-active .layui-layout-admin .layui-side .layui-side-scroll .layui-nav-tree {
+    width: 70px !important;
+}
+
+.side-active .layui-layout-admin .layui-side .layui-side-scroll {
+    width: 90px !important;
+}
+
+.side-active .side-fold,
+.side-active .layui-layout-admin .layui-side,
+.side-active .layui-layout-admin .layui-side .layui-side-scroll .layui-nav-tree,
+.side-active .layui-layout-admin .layui-side .layui-side-scroll {
+    transition: width 1s !important;
+    -moz-transition: width 1s !important; /* Firefox 4 */
+    -webkit-transition: width 1s !important; /* Safari and Chrome */
+    -o-transition: width 1s !important; /* Opera */
+}
+
+.side .side-fold,
+.side .layui-layout-admin .layui-side,
+.side .layui-layout-admin .layui-side .layui-side-scroll .layui-nav-tree,
+.side .layui-layout-admin .layui-side .layui-side-scroll {
+    transition: width 1s !important;
+    -moz-transition: width 1s !important; /* Firefox 4 */
+    -webkit-transition: width 1s !important; /* Safari and Chrome */
+    -o-transition: width 1s !important; /* Opera */
+}
+
+.side .layui-layout-admin .layui-body {
+    transition: left 1s !important;
+    -moz-transition: left 1s !important; /* Firefox 4 */
+    -webkit-transition: left 1s !important; /* Safari and Chrome */
+    -o-transition: left 1s !important; /* Opera */
+}
+
+.side-active .layui-nav .layui-nav-item a span {
+    display: none;
+}
+
+.side-active .layui-layout-admin .layui-body {
+    left: 70px !important;
+    transition: left 1s !important;
+    -moz-transition: left 1s !important; /* Firefox 4 */
+    -webkit-transition: left 1s !important; /* Safari and Chrome */
+    -o-transition: left 1s !important; /* Opera */
+}
+
+.side .side-fold {
+    height: 35px;
+    width: 200px;
+    background-color: #4A5064;
+    color: #aeb9c2;
+    line-height: 35px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.layui-nav .layui-nav-item a {
+    /*取消导航中a标签的下划线*/
+    text-decoration: none;
+    display: block;
+}
+
+.layui-nav .layui-nav-item a .fa {
+    width: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.layui-nav .layui-nav-item dd .fa {
+    font-size: 12px;
+    /*color: red;*/
+}
+
+.layui-nav .layui-this:after {
+    width: 0 !important;
+}
+
+.layui-header .layui-nav-bar {
+    display: none;
+}
+
+.layui-header .layui-nav .layui-nav-child dd a {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.layui-side-scroll {
+    /*overflow-y: auto;*/
+    /*原样式设定其宽度为220，而其父元素款200，其目的是为了遮住父元素的滑动杆*/
+    /*在超出高度后，防止浏览器的地址链接挡住导航栏*/
+    padding-bottom: 20px;
+}
+
+.box {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+    border-color: #e6e6e6;
+    margin: 10px;
+    /*box-sizing: border-box;*/
+}
+
+.box-title {
+    /*背景色待定*/
+    background-color: #e2e2e2;
+    padding: 10px;
+    /*border-bottom: 1px solid #c4d8ee;*/
+}
+.box-title i{
+    padding-right: 5px;
+}
+.box-title h4{
+    font-size: 16px;
+    display: inline-block;
+}
+.box-title-white h4 small{
+    color: white;
+}
+
+.box-body {
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.box-body .box-content{
+    height: 40px;
+}
+.box-body .box-content .fa{
+    float: left;
+    font-size: 28px;
+
+    line-height: 40px;
+}
+.box-body .box-content h4,.box-body{
+    line-height: 40px;
+}
+.box-body .box-content h3{
+    line-height: 25px;
+}
+.box-body .box-content h4,.box-body .box-content h3{
+    padding-left: 10px;
+    float: left;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 华文楷体;
+    color: #01AAED;
+    cursor: pointer;
+}
+.box-body .box-content h3 small{
+    display: block;
+}
+
+
+
+
